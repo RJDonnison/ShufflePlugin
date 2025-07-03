@@ -1,0 +1,8 @@
+name: ShufflePlugin
+version: '1.0'
+main: org.reujdon.shufflePlugin.ShufflePlugin
+api-version: '1.21'
+commands:
+  shuffletoggle:
+    description: Toggle hotbar shuffle on block place
+    usage: /shuffletoggle
