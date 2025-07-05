@@ -26,13 +26,15 @@ public final class ShufflePlugin extends JavaPlugin implements Listener {
                 sender.sendMessage("Only players can use this command.");
                 return true;
             }
+
             if (activeShuffling.contains(player)) {
                 activeShuffling.remove(player);
-                player.sendActionBar(Component.text("§aHotbar shuffle disabled!", NamedTextColor.RED));
+                player.sendActionBar(Component.text("§aShuffle disabled!", NamedTextColor.RED));
             } else {
                 activeShuffling.add(player);
-                player.sendActionBar(Component.text("§aHotbar shuffle enabled!", NamedTextColor.GREEN));
+                player.sendActionBar(Component.text("§aShuffle enabled!", NamedTextColor.GREEN));
             }
+
             return true;
         });
     }
